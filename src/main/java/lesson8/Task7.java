@@ -10,7 +10,7 @@ public class Task7 {
 
     public void task7(String text) {
         System.out.println("Task 7");
-        strArr = text.split(RegexSymbols.SENTENCIES_DEVIDING);
+        strArr = text.split(RegexSymbols.SENTENCE_SEPARATOR);
 
         consonants = 0;
         others = 0;
