@@ -10,7 +10,7 @@ public class Task6 {
 
     public void task6(String text) {
         System.out.println("Task 6");
-        strArr = text.split(" ");
+        strArr = text.split(RegexSymbols.SPACE_SYMBOL);
         for (String s : strArr) {
             numberOfDuplicates = 0;
             for (int i = 0; i < strArr.length - 1; i++) {

@@ -15,12 +15,12 @@ public class Task8 {
         wordDuration = 5;
         StringBuilder stringBuilder = new StringBuilder();
         Task8 task8 = new Task8();
-        Pattern pattern = Pattern.compile("([A-ZА-Я][^.!?]*)\\?");
+        Pattern pattern = Pattern.compile(RegexSymbols.INTERROGATIVE_SENTENCE);
         Matcher m = pattern.matcher(text);
         while (m.find()) {
             System.out.println(m.group());
             System.out.println("Words with " + wordDuration + " letters: ");
-            strArr = m.group().split(" ");
+            strArr = m.group().split(RegexSymbols.SPACE_SYMBOL);
             task8.task8NoRepetitionsInArray(strArr, wordDuration);
             for (String f : strArr) {
                 if (f.length() == wordDuration) {

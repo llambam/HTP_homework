@@ -11,7 +11,7 @@ public class Task3 {
     public void task3(String text) {
         sum=0;
         System.out.println("Task 3");
-        Pattern pattern = Pattern.compile("([0-9]+)");
+        Pattern pattern = Pattern.compile(RegexSymbols.ALL_NUMBERS);
         Matcher m = pattern.matcher(text);
         while (m.find()) {
             System.out.println(m.group());

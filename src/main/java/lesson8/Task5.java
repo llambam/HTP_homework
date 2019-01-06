@@ -5,7 +5,7 @@ public class Task5 {
         System.out.println("Task 5");
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(text);
-        System.out.println(stringBuilder.delete(text.indexOf("*"), text.lastIndexOf("*") + 1));
+        System.out.println(stringBuilder.delete(text.indexOf(RegexSymbols.SYMBOL_STAR), text.lastIndexOf(RegexSymbols.SYMBOL_STAR) + 1));
 
     }
 }

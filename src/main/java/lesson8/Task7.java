@@ -10,7 +10,7 @@ public class Task7 {
 
     public void task7(String text) {
         System.out.println("Task 7");
-        strArr = text.split("[\\.\\!\\?]");
+        strArr = text.split(RegexSymbols.SENTENCIES_DEVIDING);
 
         consonants = 0;
         others = 0;
@@ -18,11 +18,11 @@ public class Task7 {
         System.out.println("In text " + strArr.length + " sentences");
         for (String s : strArr) {
 
-            others = task7SymbolSearch(" ", s)
-                    + task7SymbolSearch("*", s)
-                    + task7SymbolSearch("-", s)
-                    + task7SymbolSearch(",", s)
-                    + task7SymbolSearch(".", s);
+            others = task7SymbolSearch(RegexSymbols.SPACE_SYMBOL, s)
+                    + task7SymbolSearch(RegexSymbols.SYMBOL_STAR, s)
+                    + task7SymbolSearch(RegexSymbols.SYMBOL_MINUS, s)
+                    + task7SymbolSearch(RegexSymbols.SYMBOL_POINT, s)
+                    + task7SymbolSearch(RegexSymbols.SYMBOL_COMMA, s);
             for (String f : vowels) {
                 vowelsSum = vowelsSum + task7SymbolSearch(f, s);
 
