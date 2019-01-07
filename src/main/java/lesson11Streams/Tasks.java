@@ -37,17 +37,22 @@ public class Tasks {
     void TestTask2() {
 
 
-        Collection<People> collection = Arrays.asList(
+        Collection<People> peoples = Arrays.asList(
                 new People("Вася", 16, Sex.MAN),
                 new People("Петя", 23, Sex.MAN),
+                new People("Петя1", 24, Sex.MAN),
                 new People("Елена", 42, Sex.WOMEN),
                 new People("Иван Иванович", 69, Sex.MAN));
 
 
         System.out.println("Выбрать мужчин-военнообязанных (от 18 до 27 лет)");
-        Collection<People> peoples = collection.stream().sorted().collect(Collectors.toList());
-        List<People> collect = peoples.stream().filter((p) -> p.getAge() >= 18 && p.getAge() < 27 && p.getSex() == Sex.MAN).collect(Collectors.toList());
-        System.out.println();
+        List<People> militaryService = peoples.stream().filter((p)-> p.getAge() >= 18 && p.getAge() < 27
+                && p.getSex() == Sex.MAN).collect(Collectors.toList());
+        System.out.println("militaryService = " + militaryService); // напечатает militaryService = [{name='Петя', age=23, sex=MAN}]
+
+
+
+
     }
 
 
