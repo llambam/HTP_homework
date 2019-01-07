@@ -8,8 +8,8 @@ import java.util.Random;
 import java.util.Set;
 
 public class Task2 {
-    private static final int numberOfBooksInCollection = 25;
-    private final static String[] vowels = {"e", "E", "y", "Y", "u", "U", "i", "I", "o", "O", "a", "A"};
+    private static final int NUMBER_OF_BOOKS_IN_COLLECTION = 25;
+    private final static String[] VOWELS = {"e", "E", "y", "Y", "u", "U", "i", "I", "o", "O", "a", "A"};
 
     public void task2() {
         System.out.println("Task 2");
@@ -23,9 +23,9 @@ public class Task2 {
         for (Book element : hashSet) {
             System.out.println(element);
         }
-        System.out.println("HashSet list(starts with vowels):  ");
+        System.out.println("HashSet list(starts with VOWELS):  ");
         for (Book element : hashSet) {
-            for (String s : vowels) {
+            for (String s : VOWELS) {
                 if (element.getBookName().startsWith(s)) {
                     System.out.println(element);
                 }
@@ -55,9 +55,9 @@ public class Task2 {
     }
 
     private static Book[] objectGenerator() {
-        Book[] book = new Book[numberOfBooksInCollection];
+        Book[] book = new Book[NUMBER_OF_BOOKS_IN_COLLECTION];
 
-        for (int i = 0; i < numberOfBooksInCollection; i++) {
+        for (int i = 0; i < NUMBER_OF_BOOKS_IN_COLLECTION; i++) {
             if (i >= 0 && i <= 5) {
                 book[i] = new Book(55, "Acapital", "karl", "marks", "levi");
 //                System.out.println(book[i]);

@@ -8,7 +8,7 @@ public class Client implements Runnable {
     public static final int NUMBER_OF_OPERATORS = 3;
     private static final boolean[] FREE_OPERATORS = new boolean[NUMBER_OF_OPERATORS];
     private static final Semaphore SEMAPHORE = new Semaphore(NUMBER_OF_OPERATORS, true);
-    private static final int speakTimeMS = 2000;
+    private static final int SPEAK_TIME_MS = 2000;
     public int operatorNumber;
     public String clientName;
     public int clientID;
@@ -34,18 +34,16 @@ public class Client implements Runnable {
                     }
                 }
             }
-
-            Thread.sleep(speakTimeMS);
+            Thread.sleep(SPEAK_TIME_MS);
             synchronized (FREE_OPERATORS) {
                 if (operatorNumber != -1) {
                     FREE_OPERATORS[operatorNumber] = false;
                 } else {
-                    System.out.println(operatorNumber);
+                    System.out.println(operatorNumber);//for debug
                 }
             }
-
             SEMAPHORE.release();
-            System.out.println("Клиент " + clientName + " ообсудивание закончил");
+            System.out.println("Клиент " + clientName + " обслуживание закончил");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

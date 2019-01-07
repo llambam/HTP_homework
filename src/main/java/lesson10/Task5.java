@@ -49,6 +49,7 @@ public class Task5 {
         List sortedList = new ArrayList(hashmap.entrySet());
         sortedList.sort(Comparator.comparing(Object::hashCode));
         Collections.sort(sortedList, new Comparator<Map.Entry<String, Integer>>() {
+
             @Override
             public int compare(Map.Entry<String, Integer> a, Map.Entry<String, Integer> b) {
                 return a.getValue().compareTo(b.getValue());

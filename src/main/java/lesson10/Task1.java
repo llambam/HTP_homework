@@ -5,15 +5,15 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Task1 {
-
+public static int listRemoveIndex=1;
 
     public void task1() {
         System.out.println("Task 1");
-        Book[] book = new Book[3];
-        book[0] = new Book(54, "Book1", "Bob", "Jonson", "Dendy");
-        book[1] = new Book(44, "Book2", "Bob", "Jonson", "Dendy");
-        book[2] = new Book(84, "Book3", "Bob", "Jonson", "Dendy");
-
+        Book[] book = {
+                new Book(54, "Book1", "Bob", "Jonson", "Dendy"),
+                new Book(44, "Book2", "Bob", "Jonson", "Dendy"),
+                new Book(84, "Book3", "Bob", "Jonson", "Dendy")
+        };
 
         List<Book> list = new LinkedList<Book>();
         list.addAll(Arrays.asList(book));
@@ -21,7 +21,7 @@ public class Task1 {
         for (Book element : list) {
             System.out.println(element);
         }
-        list.remove(1);
+        list.remove(listRemoveIndex);
         System.out.println("After removing second book:  ");
         for (Book element : list) {
             System.out.println(element);
