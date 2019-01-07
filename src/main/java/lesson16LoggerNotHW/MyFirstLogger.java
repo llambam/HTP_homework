@@ -6,7 +6,7 @@ public class MyFirstLogger {
 
     private static final Logger logger = Logger.getLogger(MyFirstLogger.class);
 
-    //    private static final Logger logger = Logger.getLogger(Main.class);
+    //    private static final Logger logger = Logger.getLogger(Tasks.class);
     public static void main(String[] args) {
         logger.info("sad");
         logger.error("dsfsfd");

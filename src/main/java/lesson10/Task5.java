@@ -27,19 +27,18 @@ public class Task5 {
                 "Спорт",
                 "Детям",
                 "Работа и офис"};
-//
-//
+
         Map<String, Integer> hashmap = new HashMap<>();
 
-        hashmap.put(keyArray[0], 12);
-        hashmap.put(keyArray[1], 2);
-        hashmap.put(keyArray[2], 15);
-        hashmap.put(keyArray[3], 19);
+        hashmap.put(keyArray[0], (int) (Math.random()*100));
+        hashmap.put(keyArray[1], (int) (Math.random()*100));
+        hashmap.put(keyArray[2], (int) (Math.random()*100));
+        hashmap.put(keyArray[3], (int) (Math.random()*100));
         hashmap.put(keyArray[4], 0);
         hashmap.put(keyArray[5], 0);
-        hashmap.put(keyArray[6], 12);
-        hashmap.put(keyArray[7], 7);
-        hashmap.put(keyArray[8], 12);
+        hashmap.put(keyArray[6], (int) (Math.random()*100));
+        hashmap.put(keyArray[7], (int) (Math.random()*100));
+        hashmap.put(keyArray[8], (int) (Math.random()*100));
         System.out.println("All keys and values: ");
         for (Map.Entry e : hashmap.entrySet()) {
             System.out.println("Key: " + e.getKey() + " Value: " + e.getValue());

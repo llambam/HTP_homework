@@ -46,43 +46,21 @@ public Book(){}
                 '}';
     }
 
-    public Integer getPages() {
-        return pages;
-    }
 
-    public void setPages(Integer pages) {
-        this.pages = pages;
-    }
 
     public String getBookName() {
         return bookName;
-    }
-
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
     }
 
     public String getAuthorName() {
         return authorName;
     }
 
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
-    }
-
     public String getAuthorsurName() {
         return authorsurName;
     }
 
-    public void setAuthorsurName(String authorsurName) {
-        this.authorsurName = authorsurName;
-    }
-
     public String getAuthorDadName() {
         return authorDadName;
-    }
-
-    public void setAuthorDadName(String authorDadName) {
-        this.authorDadName = authorDadName;
     }
 }

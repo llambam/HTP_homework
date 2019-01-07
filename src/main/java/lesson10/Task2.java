@@ -74,7 +74,7 @@ public class Task2 {
         Random random = new Random();
         char[] word = new char[random.nextInt(8) + 3];
         for (int j = 0; j < word.length; j++) {
-            word[j] = (char) ('a' + random.nextInt(26));
+            word[j] = (char) ('a' + random.nextInt());
         }
         randomStrings = new String(word);
         return randomStrings;

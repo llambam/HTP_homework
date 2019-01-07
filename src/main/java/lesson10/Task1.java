@@ -5,6 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Task1 {
+
+
     public void task1() {
         System.out.println("Task 1");
         Book[] book = new Book[3];
