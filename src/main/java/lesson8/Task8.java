@@ -20,7 +20,7 @@ public class Task8 {
         while (m.find()) {
             System.out.println(m.group());
             System.out.println("Words with " + wordDuration + " letters: ");
-            strArr = m.group().split(RegexSymbols.SPACE_SYMBOL);
+            strArr = m.group().split(RegexSymbols.SYMBOL_SPACE);
             task8.task8NoRepetitionsInArray(strArr, wordDuration);
             for (String f : strArr) {
                 if (f.length() == wordDuration) {

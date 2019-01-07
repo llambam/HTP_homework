@@ -18,7 +18,7 @@ public class Task7 {
         System.out.println("In text " + strArr.length + " sentences");
         for (String s : strArr) {
 
-            others = task7SymbolSearch(RegexSymbols.SPACE_SYMBOL, s)
+            others = task7SymbolSearch(RegexSymbols.SYMBOL_SPACE, s)
                     + task7SymbolSearch(RegexSymbols.SYMBOL_STAR, s)
                     + task7SymbolSearch(RegexSymbols.SYMBOL_MINUS, s)
                     + task7SymbolSearch(RegexSymbols.SYMBOL_POINT, s)

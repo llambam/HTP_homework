@@ -10,7 +10,7 @@ public class Task1 {
 
         System.out.println("Task 1");
         StringBuilder stringBuilder = new StringBuilder();
-        strArr = text.split(RegexSymbols.SPACE_SYMBOL);
+        strArr = text.split(RegexSymbols.SYMBOL_SPACE);
         for (String s : strArr) {
             charArray = s.toCharArray();
             charArray[0] = Character.toUpperCase(charArray[0]);

@@ -1,7 +1,7 @@
 package lesson8;
 
 public interface RegexSymbols {
-    String SPACE_SYMBOL = " ";
+    String SYMBOL_SPACE = " ";
     String ALL_NUMBERS = "[0-9]+";
     String SYMBOL_STAR ="*";
     String SYMBOL_MINUS ="-";

@@ -6,8 +6,8 @@ public class Task2 {
     public void task2(String text) {
         numberOfSpaces = 1;
         System.out.println("Task 2");
-        for (int i = 0; i < text.lastIndexOf(RegexSymbols.SPACE_SYMBOL); ) {
-            i = text.indexOf(RegexSymbols.SPACE_SYMBOL, text.indexOf(RegexSymbols.SPACE_SYMBOL, i));
+        for (int i = 0; i < text.lastIndexOf(RegexSymbols.SYMBOL_SPACE); ) {
+            i = text.indexOf(RegexSymbols.SYMBOL_SPACE, text.indexOf(RegexSymbols.SYMBOL_SPACE, i));
             i++;
             numberOfSpaces++;
         }
