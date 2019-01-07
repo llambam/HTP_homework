@@ -323,16 +323,16 @@ public class Tasks {
     public static void main(String[] args) {
 
         Tasks tasks = new Tasks();
-//        tasks.testTask1();
-//        tasks.testTask2();
-//        tasks.distingtTestTask();
-//        tasks.matchTest();
-//        tasks.mapTest();
-//        tasks.sortedTest();
-//        tasks.maxMinTest();
-//        tasks.testForEach();
-//        tasks.testPeek();
-//        tasks.testReduce();
+        tasks.testTask1();
+        tasks.testTask2();
+        tasks.distingtTestTask();
+        tasks.matchTest();
+        tasks.mapTest();
+        tasks.sortedTest();
+        tasks.maxMinTest();
+        tasks.testForEach();
+        tasks.testPeek();
+        tasks.testReduce();
         tasks.testCollect();
 
     }
